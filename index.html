@@ -79,103 +79,59 @@
 
             // Lista de canciones de rock
             const songs = [
-                // Rock en Inglés
                 {
-                    title: "Bohemian Rhapsody",
-                    artist: "Queen",
-                    youtubeId: "fJ9rUzIMcZQ",
-                    imageUrl: "https://images.unsplash.com/photo-1598387993441-a364f854c3e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDE0fHxyb2NrJTIwYmFuZHxlbnwwfHx8fDE3MjU4NjY5MDB8MA&ixlib=rb-4.0.3&q=80&w=1080"
+                    title: "Heartbeat City",
+                    artist: "The Cars",
+                    youtubeId: "9cL5-42Hg5E",
+                    imageUrl: "https://placehold.co/600x400/1a202c/ffffff?text=The+Cars" // Placeholder for now
                 },
                 {
-                    title: "Stairway to Heaven",
-                    artist: "Led Zeppelin",
-                    youtubeId: "39BWh-wEl3Y",
-                    imageUrl: "https://images.unsplash.com/photo-1523895665936-7b243e2b1692?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEyfHxyb2NrJTIwbXVzaWN8ZW58MHx8fHwxNzI1ODY2ODU0fDA&ixlib=rb-4.0.3&q=80&w=1080"
+                    title: "Blitzkrieg Bop",
+                    artist: "Ramones",
+                    youtubeId: "268C3N2dDYk",
+                    imageUrl: "https://placehold.co/600x400/1a202c/ffffff?text=Ramones" // Placeholder for now
                 },
                 {
-                    title: "Smells Like Teen Spirit",
-                    artist: "Nirvana",
-                    youtubeId: "hTWKbfoikeg",
-                    imageUrl: "https://images.unsplash.com/photo-1516273874414-e3385356b8a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDE3fHxuaXJ2YW5hfGVufDBfHx8fDE3MjU4NjY5ODR8MA&ixlib=rb-4.0.3&q=80&w=1080"
+                    title: "Arnold Layne",
+                    artist: "Pink Floyd",
+                    youtubeId: "H3DGpINHX5Q",
+                    imageUrl: "https://placehold.co/600x400/1a202c/ffffff?text=Pink+Floyd" // Placeholder for now
                 },
                 {
-                    title: "Sweet Child O' Mine",
-                    artist: "Guns N' Roses",
-                    youtubeId: "DFvC91dBTzw",
-                    imageUrl: "https://images.unsplash.com/photo-1593132399222-26127a44f3b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDE0fHxndW5zJTIwbiUyMHJvc2VzfGVufDB8fHx8MTcyNTg2NzAyMHww&ixlibrb-4.0.3&q=80&w=1080"
+                    title: "5 Years Time",
+                    artist: "Noah And The Whale",
+                    youtubeId: "qxrk1XWqfu4",
+                    imageUrl: "https://placehold.co/600x400/1a202c/ffffff?text=Noah+And+The+Whale" // Placeholder for now
                 },
                 {
-                    title: "Back in Black",
-                    artist: "AC/DC",
-                    youtubeId: "9vWNauaZAgg",
-                    imageUrl: "https://images.unsplash.com/photo-1620755995825-73133d141e54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDJ8fEFDJTJGREJ8ZW58MHx8fHwxNzI1ODY3MDQwfDA&ixlib=rb-4.0.3&q=80&w=1080"
+                    title: "Me Falta el Aliento",
+                    artist: "Estopa",
+                    youtubeId: "SOsFYpBQz80",
+                    imageUrl: "https://placehold.co/600x400/1a202c/ffffff?text=Estopa" // Placeholder for now
                 },
                 {
-                    title: "Paint It, Black",
-                    artist: "The Rolling Stones",
-                    youtubeId: "170sceOWWXc",
-                    imageUrl: "https://images.unsplash.com/photo-1511303855235-6450ba424a1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDN8fHRoZSUyMHJvbGxpbmclMjBzdG9uZXN8ZW58MHx8fHwxNzI1ODY3MDYyfDA&ixlib=rb-4.0.3&q=80&w=1080"
+                    title: "Chica de Ayer",
+                    artist: "Nacha Pop",
+                    youtubeId: "lWgXgcTABqg",
+                    imageUrl: "https://placehold.co/600x400/1a202c/ffffff?text=Nacha+Pop" // Placeholder for now
                 },
                 {
-                    title: "Do I Wanna Know?",
-                    artist: "Arctic Monkeys",
-                    youtubeId: "1tWFk8ojF4M",
-                    imageUrl: "https://images.unsplash.com/photo-1549488344-cbb6c34cf08b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDF8fGFyY3RpYyUyMG1vbmtleXN8ZW58MHx8fHwxNzI1ODY3MDg4fDA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                 {
-                    title: "Californication",
-                    artist: "Red Hot Chili Peppers",
-                    youtubeId: "YlUKcNNmywk",
-                    imageUrl: "https://images.unsplash.com/photo-1563823529-658428578536?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDR8fHJlZCUyMGhvdCUyMGNoaWxpJTIwcGVwcGVyc3xlbnwwfHx8fDE3MjU4NjcxMTJ8MA&ixlib=rb-4.0.3&q=80&w=1080"
+                    title: "Disco Eterno",
+                    artist: "Soda Stereo",
+                    youtubeId: "hgMdGGfhkyA",
+                    imageUrl: "https://placehold.co/600x400/1a202c/ffffff?text=Soda+Stereo" // Placeholder for now
                 },
                 {
-                    title: "Enter Sandman",
-                    artist: "Metallica",
-                    youtubeId: "CD-E-LDc384",
-                    imageUrl: "https://images.unsplash.com/photo-1632014798542-1896752763d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEwfHxtZXRhbGxpY2F8ZW58MHx8fHwxNzI1ODY3MTM5fDA&ixlib-rb-4.0.3&q=80&w=1080"
-                },
-                // Rock en Español - Enlaces actualizados y seleccionados
-                {
-                    title: "Luna (En Vivo)",
-                    artist: "Zoé",
-                    youtubeId: "T8dujqrFGvU",
-                    imageUrl: "https://images.unsplash.com/photo-1550791871-04354b6f1704?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDZ8fHpvw6l8ZW58MHx8fHwxNzI1ODY3MjIwfDA&ixlib=rb-4.0.3&q=80&w=1080"
+                    title: "A un minuto de ti",
+                    artist: "Mikel Erentxun",
+                    youtubeId: "h_I9xto06A0",
+                    imageUrl: "https://placehold.co/600x400/1a202c/ffffff?text=Mikel+Erentxun" // Placeholder for now
                 },
                 {
-                    title: "Luna (En Vivo) (versión alternativa)",
-                    artist: "Zoé",
-                    youtubeId: "AacFxZRetIY",
-                    imageUrl: "https://images.unsplash.com/photo-1550791871-04354b6f1704?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDZ8fHpvw6l8ZW58MHx8fHwxNzI1ODY3MjIwfDA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Luna (Live 8.11.14)",
-                    artist: "Zoé",
-                    youtubeId: "xtKlwos6YOE",
-                    imageUrl: "https://images.unsplash.com/photo-1550791871-04354b6f1704?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDZ8fHpvw6l8ZW58MHx8fHwxNzI1ODY3MjIwfDA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Acabo de llegar",
-                    artist: "Fito & Fitipaldis",
-                    youtubeId: "t8Rvjo49n7o",
-                    imageUrl: "https://images.unsplash.com/photo-1587323860163-5824c8a92891?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEwfHxzcGFuaXNoJTIwcm9jayxlbnwwfHx8fDE3MjgwNDE4NzZ8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Acabo de llegar (videoclip oficial)",
-                    artist: "Fito & Fitipaldis",
-                    youtubeId: "WVvxcwp3v8Y",
-                    imageUrl: "https://images.unsplash.com/photo-1587323860163-5824c8a92891?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEwfHxzcGFuaXNoJTIwcm9jayxlbnwwfHx8fDE3MjgwNDE4NzZ8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Acabo de llegar (en vivo)",
-                    artist: "Fito & Fitipaldis",
-                    youtubeId: "Y-giiDGX3zE",
-                    imageUrl: "https://images.unsplash.com/photo-1587323860163-5824c8a92891?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEwfHxzcGFuaXNoJTIwcm9jayxlbnwwfHx8fDE3MjgwNDE4NzZ8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Acabo de llegar (Directo Teatro Arriaga)",
-                    artist: "Fito & Fitipaldis",
-                    youtubeId: "iLy-Ie2QiQw",
-                    imageUrl: "https://images.unsplash.com/photo-1587323860163-5824c8a92891?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEwfHxzcGFnaXNoJTIwcm9jayxlbnwwfHx8fDE3MjgwNDE4NzZ8MA&ixlib=rb-4.0.3&q=80&w=1080"
+                    title: "You're the Inspiration",
+                    artist: "Chicago",
+                    youtubeId: "ljcenbOOnFk",
+                    imageUrl: "https://placehold.co/600x400/1a202c/ffffff?text=Chicago" // Placeholder for now
                 }
             ];
 
@@ -188,10 +144,15 @@
                     const randomIndex = Math.floor(Math.random() * songs.length);
                     const song = songs[randomIndex];
 
+                    // Extraer solo el ID del video si la URL incluye parámetros
+                    const youtubeUrl = new URL(`https://youtu.be/${song.youtubeId}`);
+                    const videoId = youtubeUrl.searchParams.get('v') || song.youtubeId.split('?')[0].split('/').pop();
+
+
                     // Actualiza el contenido del DOM
                     songTitleEl.textContent = song.title;
                     songArtistEl.textContent = song.artist;
-                    youtubeLinkEl.href = `https://www.youtube.com/watch?v=${song.youtubeId}`;
+                    youtubeLinkEl.href = `https://www.youtube.com/watch?v=${videoId}`;
                     
                     // Precarga la imagen para una transición suave
                     const img = new Image();
