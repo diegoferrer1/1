@@ -213,14 +213,40 @@
                 }
             ];
 
-            // Función para mostrar una canción aleatoria
-            function displayRandomSong() {
+            let shuffledSongs = [];
+            let currentSongIndex = 0;
+
+            // Función para barajar la lista de canciones (Algoritmo Fisher-Yates)
+            function shuffle(array) {
+                let m = array.length, t, i;
+                // Mientras queden elementos a barajar...
+                while (m) {
+                    // Escoge un elemento restante...
+                    i = Math.floor(Math.random() * m--);
+                    // Y cámbialo por el elemento actual.
+                    t = array[m];
+                    array[m] = array[i];
+                    array[i] = t;
+                }
+                return array;
+            }
+
+
+            // Función para mostrar la siguiente canción
+            function displayNextSong() {
                 // Añade una clase para la animación de salida
                 songCard.classList.add('opacity-0', 'scale-95');
 
                 setTimeout(() => {
-                    const randomIndex = Math.floor(Math.random() * songs.length);
-                    const song = songs[randomIndex];
+                    // Si hemos llegado al final de la lista barajada, la volvemos a barajar
+                    if (currentSongIndex >= shuffledSongs.length) {
+                        shuffledSongs = shuffle([...songs]); // Se baraja una copia
+                        currentSongIndex = 0;
+                        console.log("Playlist re-shuffled!");
+                    }
+
+                    const song = shuffledSongs[currentSongIndex];
+                    currentSongIndex++; // Apunta a la siguiente canción para el próximo click
 
                     // Extraer solo el ID del video si la URL incluye parámetros
                     const youtubeUrl = new URL(`https://youtu.be/${song.youtubeId}`);
@@ -249,10 +275,11 @@
             }
 
             // Event listener para el botón
-            newSongBtn.addEventListener('click', displayRandomSong);
+            newSongBtn.addEventListener('click', displayNextSong);
 
-            // Muestra la primera canción al cargar la página
-            displayRandomSong();
+            // Baraja la lista y muestra la primera canción al cargar la página
+            shuffledSongs = shuffle([...songs]);
+            displayNextSong();
         });
     </script>
 </body>
