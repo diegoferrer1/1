@@ -79,6 +79,7 @@
 
             // Lista de canciones de rock
             const songs = [
+                // Rock en Inglés
                 {
                     title: "Bohemian Rhapsody",
                     artist: "Queen",
@@ -133,239 +134,48 @@
                     youtubeId: "CD-E-LDc384",
                     imageUrl: "https://images.unsplash.com/photo-1632014798542-1896752763d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEwfHxtZXRhbGxpY2F8ZW58MHx8fHwxNzI1ODY3MTM5fDA&ixlib-rb-4.0.3&q=80&w=1080"
                 },
+                // Rock en Español - Enlaces actualizados y seleccionados
                 {
                     title: "Luna (En Vivo)",
+                    artist: "Zoé",
+                    youtubeId: "T8dujqrFGvU",
+                    imageUrl: "https://images.unsplash.com/photo-1550791871-04354b6f1704?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDZ8fHpvw6l8ZW58MHx8fHwxNzI1ODY3MjIwfDA&ixlib=rb-4.0.3&q=80&w=1080"
+                },
+                {
+                    title: "Luna (En Vivo) (versión alternativa)",
                     artist: "Zoé",
                     youtubeId: "AacFxZRetIY",
                     imageUrl: "https://images.unsplash.com/photo-1550791871-04354b6f1704?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDZ8fHpvw6l8ZW58MHx8fHwxNzI1ODY3MjIwfDA&ixlib=rb-4.0.3&q=80&w=1080"
                 },
                 {
-                    title: "El Microbito",
-                    artist: "Fobia",
-                    youtubeId: "9mE1RroU9EQ",
-                    imageUrl: "https://images.unsplash.com/photo-1516997121675-4c2d1687aa33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDE0fHxtZXhpY2FuJTIwcm9jayUyMGJhbmR8ZW58MHx8fHwxNzI4MDQxNjA5fDA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Veneno Vil",
-                    artist: "Fobia",
-                    youtubeId: "iIlwdDqqptQ",
-                    imageUrl: "https://images.unsplash.com/photo-1516997121675-4c2d1687aa33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDE0fHxtZXhpY2FuJTIwcm9jayUyMGJhbmR8ZW58MHx8fHwxNzI4MDQxNjA5fDA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Adiós",
-                    artist: "Gustavo Cerati",
-                    youtubeId: "5-6OmdotpSs",
-                    imageUrl: "https://images.unsplash.com/photo-1559223607-a43c0645a222?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDR8fGFyZ2VudGluZWFuJTIwcm9jayUyMGd1aXRhcnxlbnwwfHx8fDE3MjgwNDE2ODR8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Puente",
-                    artist: "Gustavo Cerati",
-                    youtubeId: "eAO7CEcCD3s",
-                    imageUrl: "https://images.unsplash.com/photo-1559223607-a43c0645a222?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDR8fGFyZ2VudGluZWFuJTIwcm9jayUyMGd1aXRhcnxlbnwwfHx8fDE3MjgwNDE2ODR8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Bocanada",
-                    artist: "Gustavo Cerati",
-                    youtubeId: "r4iEq-IXqfw",
-                    imageUrl: "https://images.unsplash.com/photo-1559223607-a43c0645a222?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDR8fGFyZ2VudGluZWFuJTIwcm9jayUyMGd1aXRhcnxlbnwwfHx8fDE3MjgwNDE2ODR8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Me Quedo Aquí",
-                    artist: "Gustavo Cerati",
-                    youtubeId: "bWK1r-oXXKA",
-                    imageUrl: "https://images.unsplash.com/photo-1559223607-a43c0645a222?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDR8fGFyZ2VudGluZWFuJTIwcm9jayUyMGd1aXRhcnxlbnwwfHx8fDE3MjgwNDE2ODR8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Cosas Imposibles",
-                    artist: "Gustavo Cerati",
-                    youtubeId: "UtHkxBC0GyU",
-                    imageUrl: "https://images.unsplash.com/photo-1559223607-a43c0645a222?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDR8fGFyZ2VudGluZWFuJTIwcm9jayUyMGd1aXRhcnxlbnwwfHx8fDE3MjgwNDE2ODR8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Soñé (En Vivo)",
+                    title: "Luna (Live 8.11.14)",
                     artist: "Zoé",
-                    youtubeId: "jIF2a1wji88",
+                    youtubeId: "xtKlwos6YOE",
                     imageUrl: "https://images.unsplash.com/photo-1550791871-04354b6f1704?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDZ8fHpvw6l8ZW58MHx8fHwxNzI1ODY3MjIwfDA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Labios Rotos (En Vivo)",
-                    artist: "Zoé",
-                    youtubeId: "YVodRkhS5VU",
-                    imageUrl: "https://images.unsplash.com/photo-1550791871-04354b6f1704?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDZ8fHpvw6l8ZW58MHx8fHwxNzI1ODY3MjIwfDA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Nubes Negras",
-                    artist: "Los de Adentro",
-                    youtubeId: "n8HHL44D6kE",
-                    imageUrl: "https://images.unsplash.com/photo-1526478815232-9c4c752b7531?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEwfHxyb2NrJTIwY29uY2VydCUyMGxpZ2h0c3xlbnwwfHx8fDE3MjgwNDE3MzV8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Una Canción",
-                    artist: "Los de Adentro",
-                    youtubeId: "gE2J_Dzyeeo",
-                    imageUrl: "https://images.unsplash.com/photo-1526478815232-9c4c752b7531?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEwfHxyb2NrJTIwY29uY2VydCUyMGxpZ2h0c3xlbnwwfHx8fDE3MjgwNDE3MzV8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "El Duelo (feat. Ely Guerra)",
-                    artist: "La Ley",
-                    youtubeId: "xHkbTuJ3qdU",
-                    imageUrl: "https://images.unsplash.com/photo-1543321269-9d868a0a43e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDF8fGNoaWxlYW4lMjByb2NrJTIwYmFuZHxlbnwwfHx8fDE3MjgwNDE3Nzh8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Sin Ti",
-                    artist: "La Ley",
-                    youtubeId: "l7XtELfXh6s",
-                    imageUrl: "https://images.unsplash.com/photo-1543321269-9d868a0a43e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDF8fGNoaWxlYW4lMjByb2NrJTIwYmFuZHxlbnwwfHx8fDE3MjgwNDE3Nzh8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Mentira",
-                    artist: "La Ley",
-                    youtubeId: "05LW_JdtEVk",
-                    imageUrl: "https://images.unsplash.com/photo-1543321269-9d868a0a43e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDF8fGNoaWxlYW4lMjByb2NrJTIwYmFuZHxlbnwwfHx8fDE3MjgwNDE3Nzh8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Día Cero",
-                    artist: "La Ley",
-                    youtubeId: "7ZUUbimRR34",
-                    imageUrl: "https://images.unsplash.com/photo-1543321269-9d868a0a43e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDF8fGnoaWxlYW4lMjByb2NrJTIwYmFuZHxlbnwwfHx8fDE3MjgwNDE3Nzh8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "El Duelo",
-                    artist: "La Ley",
-                    youtubeId: "zeUBevkD5l8",
-                    imageUrl: "https://images.unsplash.com/photo-1543321269-9d868a0a43e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDF8fGNoaWxlYW4lMjByb2NrJTIwYmFuZHxlbnwwfHx8fDE3MjgwNDE3Nzh8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Olvidar",
-                    artist: "La Ley",
-                    youtubeId: "iwirxghRxjI",
-                    imageUrl: "https://images.unsplash.com/photo-1543321269-9d868a0a43e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDF8fGNoaWxlYW4lMjByb2NrJTIwYmFuZHxlbnwwfHx8fDE3MjgwNDE3Nzh8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Aquí",
-                    artist: "La Ley",
-                    youtubeId: "Js90NqrrNuY",
-                    imageUrl: "https://images.unsplash.com/photo-1543321269-9d868a0a43e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDF8fGNoaWxlYW4lMjByb2NrJTIwYmFuZHxlbnwwfHx8fDE3MjgwNDE3Nzh8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Mágico",
-                    artist: "Jóvenes Pordioseros",
-                    youtubeId: "RxVB1p0MQCI",
-                    imageUrl: "https://images.unsplash.com/photo-1517230878791-4d28214057c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEzfHxyb2NrJTIwc2hvd3xlbnwwfHx8fDE3MjgwNDE4MjB8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Por la boca vive el pez",
-                    artist: "Fito & Fitipaldis",
-                    youtubeId: "iUXs4Nt3Y7Y",
-                    imageUrl: "https://images.unsplash.com/photo-1587323860163-5824c8a92891?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEwfHxzcGFuaXNoJTIwcm9jayxlbnwwfHx8fDE3MjgwNDE4NzZ8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Me equivocaría otra vez",
-                    artist: "Fito & Fitipaldis",
-                    youtubeId: "HjF3E2zGNkg",
-                    imageUrl: "https://images.unsplash.com/photo-1587323860163-5824c8a92891?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEwfHxzcGFuaXNoJTIwcm9jayxlbnwwfHx8fDE3MjgwNDE4NzZ8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Soldadito marinero",
-                    artist: "Fito & Fitipaldis",
-                    youtubeId: "GxQjx7FkmNA",
-                    imageUrl: "https://images.unsplash.com/photo-1587323860163-5824c8a92891?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEwfHxzcGFuaXNoJTIwcm9jayxlbnwwfHx8fDE3MjgwNDE4NzZ8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "La casa por el tejado",
-                    artist: "Fito & Fitipaldis",
-                    youtubeId: "8qz8FqmTsJY",
-                    imageUrl: "https://images.unsplash.com/photo-1587323860163-5824c8a92891?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEwfHxzcGFuaXNoJTIwcm9jayxlbnwwfHx8fDE3MjgwNDE4NzZ8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "El ataque de las chicas cocodrilo",
-                    artist: "Hombres G",
-                    youtubeId: "kEzeimPTsxk",
-                    imageUrl: "https://images.unsplash.com/photo-1565058235882-8422c842751f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDV8fHJvY2slMjBiYW5kJTIwODBzenxlbnwwfHx8fDE3MjgwNDE5MTN8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Cuando Me Enamoro",
-                    artist: "Enrique Iglesias",
-                    youtubeId: "b3CoRn7LD4M",
-                    imageUrl: "https://images.unsplash.com/photo-1605980063405-c3e0b2a7593c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEwfHxsYXRpbiUyMHBvcCUyMHNpbmdlcnxlbnwwfHx8fDE3MjgwNDIwMTZ8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "20 de abril",
-                    artist: "Celtas Cortos",
-                    youtubeId: "5oCTYqtzB84",
-                    imageUrl: "https://images.unsplash.com/photo-1599423614920-53096a603c62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDd8fGNlbHRpYyUyMG11c2ljfGVufDB8fHx8MTcyODA0MjA1N3ww&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "El Mundo Tras el Cristal",
-                    artist: "La Guardia",
-                    youtubeId: "ESdCRkb7FGI",
-                    imageUrl: "https://images.unsplash.com/photo-1549488344-cbb6c34cf08b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDE0fHxzcGFuaXNoJTIwcm9jayUyMGJhbmR8ZW58MHx8fHwxNzI4MDQyMDk3fDA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Como un burro amarrado en la puerta del baile",
-                    artist: "El Último de la Fila",
-                    youtubeId: "fKPC6wW6vlA",
-                    imageUrl: "https://images.unsplash.com/photo-1524234103236-a03b58474ac6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDIwfHxzcGFuaXNoJTIwcm9jayUyMGJhbmQlMjA5MHN8ZW58MHx8fHwxNzI4MDQyMTMxfDA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Llanto de Pasión",
-                    artist: "El Último de la Fila",
-                    youtubeId: "kJpaRi-yrCo",
-                    imageUrl: "https://images.unsplash.com/photo-1524234103236-a03b58474ac6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDIwfHxzcGFuaXNoJTIwcm9jayUyMGJhbmQlMjA5MHN8ZW58MHx8fHwxNzI4MDQyMTMxfDA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Cuando Brille el Sol",
-                    artist: "La Guardia",
-                    youtubeId: "oPf-BFkWlO0",
-                    imageUrl: "https://images.unsplash.com/photo-1549488344-cbb6c34cf08b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDE0fHxzcGFuaXNoJTIwcm9jayUyMGJhbmR8ZW58MHx8fHwxNzI4MDQyMDk3fDA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Pájaros de Barro",
-                    artist: "Manolo García",
-                    youtubeId: "GZ_dyhinwu0",
-                    imageUrl: "https://images.unsplash.com/photo-1598387993441-a364f854c3e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEyfHxzcGFuaXNoJTIwcm9jayUyMHNpbmdlcnxlbnwwfHx8fDE3MjgwNDIxODN8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Chica de Ayer",
-                    artist: "El Canto del Loco",
-                    youtubeId: "1zAnz0WnKiM",
-                    imageUrl: "https://images.unsplash.com/photo-1557954311-b0162a45d928?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDV8fHBvcCUyMHJvY2slMjBiYW5kJTIwc3BhaW58ZW58MHx8fHwxNzI4MDQyMjIyfDA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Lucha de Gigantes",
-                    artist: "Nacha Pop",
-                    youtubeId: "KmuTWVgI1mY",
-                    imageUrl: "https://images.unsplash.com/photo-1631027170940-20c752c54211?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDE2fHxzcGFuaXNoJTIwcm9jayUyMGJhbmQlMjA4MHN8ZW58MHx8fHwxNzI4MDQyMjU3fDA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "A tientas",
-                    artist: "Duncan Dhu",
-                    youtubeId: "GX89AGfXMnY",
-                    imageUrl: "https://images.unsplash.com/photo-1549488344-cbb6c34cf08b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEyfHxzcGFuaXNoJTIwcG9wJTIwcm9jayxlbnwwfHx8fDE3MjgwNDIyOTB8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "En algún lugar",
-                    artist: "Duncan Dhu",
-                    youtubeId: "1ybUUvUVjbg",
-                    imageUrl: "https://images.unsplash.com/photo-1549488344-cbb6c34cf08b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEyfHxzcGFuaXNoJTIwcG9wJTIwcm9jayxlbnwwfHx8fDE3MjgwNDIyOTB8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "A un minuto de ti",
-                    artist: "Mikel Erentxun",
-                    youtubeId: "h_I9xto06A0",
-                    imageUrl: "https://images.unsplash.com/photo-1511303855235-6450ba424a1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDV8fHNpbmdlciUyMGd1aXRhcnxlbnwwfHx8fDE3MjgwNDIzMjR8MA&ixlib=rb-4.0.3&q=80&w=1080"
-                },
-                {
-                    title: "Lobo-hombre en París",
-                    artist: "La Unión",
-                    youtubeId: "yfnvoIdwcOM",
-                    imageUrl: "https://images.unsplash.com/photo-1593132399222-26127a44f3b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDExfHxzcGFuaXNoJTIwcm9jayUyMGJhbmR8ZW58MHx8fHwxNzI4MDQyMzk4fDA&ixlib=rb-4.0.3&q=80&w=1080"
                 },
                 {
                     title: "Acabo de llegar",
                     artist: "Fito & Fitipaldis",
+                    youtubeId: "t8Rvjo49n7o",
+                    imageUrl: "https://images.unsplash.com/photo-1587323860163-5824c8a92891?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEwfHxzcGFuaXNoJTIwcm9jayxlbnwwfHx8fDE3MjgwNDE4NzZ8MA&ixlib=rb-4.0.3&q=80&w=1080"
+                },
+                {
+                    title: "Acabo de llegar (videoclip oficial)",
+                    artist: "Fito & Fitipaldis",
                     youtubeId: "WVvxcwp3v8Y",
                     imageUrl: "https://images.unsplash.com/photo-1587323860163-5824c8a92891?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEwfHxzcGFuaXNoJTIwcm9jayxlbnwwfHx8fDE3MjgwNDE4NzZ8MA&ixlib=rb-4.0.3&q=80&w=1080"
+                },
+                {
+                    title: "Acabo de llegar (en vivo)",
+                    artist: "Fito & Fitipaldis",
+                    youtubeId: "Y-giiDGX3zE",
+                    imageUrl: "https://images.unsplash.com/photo-1587323860163-5824c8a92891?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEwfHxzcGFuaXNoJTIwcm9jayxlbnwwfHx8fDE3MjgwNDE4NzZ8MA&ixlib=rb-4.0.3&q=80&w=1080"
+                },
+                {
+                    title: "Acabo de llegar (Directo Teatro Arriaga)",
+                    artist: "Fito & Fitipaldis",
+                    youtubeId: "iLy-Ie2QiQw",
+                    imageUrl: "https://images.unsplash.com/photo-1587323860163-5824c8a92891?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwNXwwfDF8c2VhcmNofDEwfHxzcGFnaXNoJTIwcm9jayxlbnwwfHx8fDE3MjgwNDE4NzZ8MA&ixlib=rb-4.0.3&q=80&w=1080"
                 }
             ];
 
